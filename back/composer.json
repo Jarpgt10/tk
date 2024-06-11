@@ -1,0 +1,17 @@
+{
+    "name": "alejandro/back",
+    "autoload": {
+        "psr-4": {
+            "Alejandro\\Back\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jarpgt10",
+            "email": "userjarpgt@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^2.1"
+    }
+}

@@ -1,0 +1,8 @@
+export const PUBLIC = '/'
+export const PRIVATE = '/private'
+export const TICKET = PRIVATE + '/ticket'
+// export const MANTENIMIENTO = PRIVATE + '/mantenimiento'
+export const HOME = PRIVATE + '/home'
+export const USER = PRIVATE + '/m_user'
+export const AREA = PRIVATE + '/m_area'
+export const ROL = PRIVATE + '/m_rol'

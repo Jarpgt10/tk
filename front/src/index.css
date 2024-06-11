@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* ############################################ SPINER CSS ############################################ */
+
+.loading-container {
+  position: fixed;
+  /* Ensures the screen is covered */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  /* Covers entire viewport width */
+  height: 100vh;
+  /* Covers entire viewport height */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Dark background with 50% opacity */
+  display: flex;
+  /* Center spinner vertically and horizontally */
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #ffffff;
+  border-top: 4px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* ############################################ COLORS ############################################ */
+.color-text-1{
+  @apply  text-[#2C2E42];
+}
+
+.color-input-1{
+  @apply  border border-[#2C2E42];
+}
+
+.button-1 {
+  @apply bg-[#2C2E42] text-white rounded-lg; 
+}
+
+
+.bg-1{
+  @apply bg-[#16202a];
+}
+
+.bg-2 {
+  @apply bg-[#d3d3d3];
+}
+.bg-3 {
+  @apply bg-[#1f2937];
+}
+
+
+.bg-hover-3{
+  @apply hover:bg-[#1f2937c4]
+}
+
+
+/* ############################################ containers ############################################ */
+
+.flex-center{
+  @apply flex justify-center items-center
+}
+.flex-start {
+  @apply flex justify-start items-start
+}
+.flex-end {
+  @apply flex justify-end items-center
+}
+
+.flex-between {
+  @apply flex justify-between items-center
+}
+
+/* ############################################ TEXT ############################################ */
+
+.title-1{
+  @apply  font-bold text-2xl
+}
+
+.button-submit{
+  @apply bg-[#313b4b] text-white hover:bg-[#313b4b6c];
+}
